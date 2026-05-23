@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Афиша | Концертный зал "Аккорд"</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h1>Концертный зал "Аккорд"</h1>
+                <p>Лучшая концертная площадка города</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="schedule.html" class="active">Афиша</a></li>
+                    <li><a href="hall.html">Зал</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                    <li><a href="booking.html">Бронирование</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Афиша мероприятий</h1>
+                <p>Выберите событие и забронируйте билеты</p>
+            </div>
+        </section>
+
+        <section class="schedule">
+            <div class="container">
+                <div class="schedule-filter">
+                    <button class="filter-btn active" data-filter="all">Все</button>
+                    <button class="filter-btn" data-filter="classic">Классика</button>
+                    <button class="filter-btn" data-filter="jazz">Джаз</button>
+                    <button class="filter-btn" data-filter="rock">Рок</button>
+                    <button class="filter-btn" data-filter="pop">Поп</button>
+                </div>
+
+                <div class="schedule-list">
+                    <div class="schedule-item" data-type="classic">
+                        <div class="schedule-date">
+                            <span class="day">15</span>
+                            <span class="month">Май</span>
+                            <span class="year">2026</span>
+                        </div>
+                        <div class="schedule-info">
+                            <h3>Симфонический оркестр</h3>
+                            <p>Концерт классической музыки. В программе: Чайковский, Бетховен, Моцарт</p>
+                            <div class="schedule-details">
+                                <span>Начало: 19:00</span>
+                                <span>Цена: от 1500 руб.</span>
+                            </div>
+                        </div>
+                        <div class="schedule-action">
+                            <a href="booking.html" class="btn-small">Купить билет</a>
+                        </div>
+                    </div>
+
+                    <div class="schedule-item" data-type="jazz">
+                        <div class="schedule-date">
+                            <span class="day">22</span>
+                            <span class="month">Май</span>
+                            <span class="year">2026</span>
+                        </div>
+                        <div class="schedule-info">
+                            <h3>Джазовый вечер</h3>
+                            <p>Выступление джазового квартета. Импровизация и классика джаза</p>
+                            <div class="schedule-details">
+                                <span>Начало: 20:00</span>
+                                <span>Цена: от 1200 руб.</span>
+                            </div>
+                        </div>
+                        <div class="schedule-action">
+                            <a href="booking.html" class="btn-small">Купить билет</a>
+                        </div>
+                    </div>
+
+                    <div class="schedule-item" data-type="rock">
+                        <div class="schedule-date">
+                            <span class="day">5</span>
+                            <span class="month">Июнь</span>
+                            <span class="year">2026</span>
+                        </div>
+                        <div class="schedule-info">
+                            <h3>Рок-концерт</h3>
+                            <p>Лучшие рок-хиты. Участвуют три известные рок-группы</p>
+                            <div class="schedule-details">
+                                <span>Начало: 19:30</span>
+                                <span>Цена: от 2000 руб.</span>
+                            </div>
+                        </div>
+                        <div class="schedule-action">
+                            <a href="booking.html" class="btn-small">Купить билет</a>
+                        </div>
+                    </div>
+
+                    <div class="schedule-item" data-type="pop">
+                        <div class="schedule-date">
+                            <span class="day">12</span>
+                            <span class="month">Июнь</span>
+                            <span class="year">2026</span>
+                        </div>
+                        <div class="schedule-info">
+                            <h3>Поп-концерт</h3>
+                            <p>Выступление популярных исполнителей. Танцевальная программа</p>
+                            <div class="schedule-details">
+                                <span>Начало: 20:00</span>
+                                <span>Цена: от 1800 руб.</span>
+                            </div>
+                        </div>
+                        <div class="schedule-action">
+                            <a href="booking.html" class="btn-small">Купить билет</a>
+                        </div>
+                    </div>
+
+                    <div class="schedule-item" data-type="classic">
+                        <div class="schedule-date">
+                            <span class="day">20</span>
+                            <span class="month">Июнь</span>
+                            <span class="year">2026</span>
+                        </div>
+                        <div class="schedule-info">
+                            <h3>Вечер фортепианной музыки</h3>
+                            <p>Сольный концерт лауреата международных конкурсов</p>
+                            <div class="schedule-details">
+                                <span>Начало: 19:00</span>
+                                <span>Цена: от 1000 руб.</span>
+                            </div>
+                        </div>
+                        <div class="schedule-action">
+                            <a href="booking.html" class="btn-small">Купить билет</a>
+                        </div>
+                    </div>
+
+                    <div class="schedule-item" data-type="rock">
+                        <div class="schedule-date">
+                            <span class="day">28</span>
+                            <span class="month">Июнь</span>
+                            <span class="year">2026</span>
+                        </div>
+                        <div class="schedule-info">
+                            <h3>Рок-фестиваль</h3>
+                            <p>Ежегодный рок-фестиваль. День открытых дверей</p>
+                            <div class="schedule-details">
+                                <span>Начало: 15:00</span>
+                                <span>Цена: от 2500 руб.</span>
+                            </div>
+                        </div>
+                        <div class="schedule-action">
+                            <a href="booking.html" class="btn-small">Купить билет</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <p>Концертный зал "Аккорд"</p>
+                <p>г. Стерлитамак, ул. Ленина, д. 15</p>
+                <p>Телефон: +7 (495) 123-45-67</p>
+                <p>Email: info@akkord.ru</p>
+            </div>
+            <div class="footer-hours">
+                <p>Часы работы кассы:</p>
+                <p>Пн-Пт: 10:00 - 20:00</p>
+                <p>Сб-Вс: 11:00 - 19:00</p>
+            </div>
+            <div class="footer-copyright">
+                <p>2026 Концертный зал "Аккорд". Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Простой фильтр для афиши
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const scheduleItems = document.querySelectorAll('.schedule-item');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const filter = btn.dataset.filter;
+                
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                
+                scheduleItems.forEach(item => {
+                    if (filter === 'all' || item.dataset.type === filter) {
+                        item.style.display = 'flex';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

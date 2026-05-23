@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бронирование | Концертный зал "Аккорд"</title>
+       <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h1>Концертный зал "Аккорд"</h1>
+                <p>Лучшая концертная площадка города</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="schedule.html">Афиша</a></li>
+                    <li><a href="hall.html">Зал</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                    <li><a href="booking.html" class="active">Бронирование</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Бронирование билетов</h1>
+                <p>Заполните форму для бронирования билетов</p>
+            </div>
+        </section>
+
+        <section class="booking-form-section">
+            <div class="container">
+                <div class="booking-grid">
+                    <div class="booking-form">
+                        <form action="#" method="POST">
+                            <div class="form-group">
+                                <label for="event">Выберите мероприятие</label>
+                                <select id="event" name="event" required>
+                                    <option value="">-- Выберите событие --</option>
+                                    <option>Симфонический оркестр (15 мая 2026, 19:00)</option>
+                                    <option>Джазовый вечер (22 мая 2026, 20:00)</option>
+                                    <option>Рок-концерт (5 июня 2026, 19:30)</option>
+                                    <option>Поп-концерт (12 июня 2026, 20:00)</option>
+                                    <option>Вечер фортепианной музыки (20 июня 2026, 19:00)</option>
+                                    <option>Рок-фестиваль (28 июня 2026, 15:00)</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="sector">Сектор</label>
+                                <select id="sector" name="sector" required>
+                                    <option value="">-- Выберите сектор --</option>
+                                    <option>Партер (1500-2500 руб.)</option>
+                                    <option>Бельэтаж (1000-1800 руб.)</option>
+                                    <option>Балкон (700-1200 руб.)</option>
+                                </select>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group half">
+                                    <label for="row">Ряд</label>
+                                    <input type="number" id="row" name="row" min="1" max="20" required>
+                                </div>
+                                <div class="form-group half">
+                                    <label for="seat">Место</label>
+                                    <input type="number" id="seat" name="seat" min="1" max="10" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="tickets-count">Количество билетов</label>
+                                <input type="number" id="tickets-count" name="tickets_count" min="1" max="10" value="1" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="fullname">Ваше имя</label>
+                                <input type="text" id="fullname" name="fullname" placeholder="Иванов Иван Иванович" required>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group half">
+                                    <label for="phone">Телефон</label>
+                                    <input type="tel" id="phone" name="phone" placeholder="+7 (XXX) XXX-XX-XX" required>
+                                </div>
+                                <div class="form-group half">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" placeholder="ivan@example.com" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="comment">Комментарий (необязательно)</label>
+                                <textarea id="comment" name="comment" rows="3" placeholder="Особые пожелания"></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="agree" required>
+                                    Я согласен с условиями бронирования и обработкой персональных данных
+                                </label>
+                            </div>
+
+                            <button type="submit" class="btn-primary btn-block">Забронировать билеты</button>
+                        </form>
+                    </div>
+
+                    <div class="booking-info">
+                        <h3>Информация о бронировании</h3>
+                        <div class="info-block">
+                            <h4>Как забронировать билеты</h4>
+                            <p>1. Выберите мероприятие и место</p>
+                            <p>2. Заполните контактные данные</p>
+                            <p>3. Подтвердите бронирование</p>
+                            <p>4. Получите подтверждение на email</p>
+                        </div>
+
+                        <div class="info-block">
+                            <h4>Условия бронирования</h4>
+                            <p>Бронирование действует 30 минут</p>
+                            <p>Оплата на сайте или в кассе</p>
+                            <p>Возврат билетов за 3 дня до мероприятия</p>
+                        </div>
+
+                        <div class="info-block">
+                            <h4>Способы оплаты</h4>
+                            <p>Банковские карты (Visa, Mastercard, МИР)</p>
+                            <p>Электронные кошельки</p>
+                            <p>Наличные в кассе</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <p>Концертный зал "Аккорд"</p>
+                <p>г. Стерлитамак, ул. Ленина, д. 15</p>
+                <p>Телефон: +7 (495) 123-45-67</p>
+                <p>Email: info@akkord.ru</p>
+            </div>
+            <div class="footer-hours">
+                <p>Часы работы кассы:</p>
+                <p>Пн-Пт: 10:00 - 20:00</p>
+                <p>Сб-Вс: 11:00 - 19:00</p>
+            </div>
+            <div class="footer-copyright">
+                <p>2026 Концертный зал "Аккорд". Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
